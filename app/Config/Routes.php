@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('listar', 'Libros::index');
+$routes->get('crear', 'Libros::crear');
+$routes->get('guardar', 'Libros::guardar');
 
 /*
  * --------------------------------------------------------------------
@@ -52,3 +54,4 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 {
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+$routes->get('guardar', 'Libros::guardar');

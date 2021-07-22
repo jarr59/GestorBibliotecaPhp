@@ -32,7 +32,7 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
+		'hostname' => 'localhost:3308',
 		'username' => 'root',
 		'password' => '',
 		'database' => 'biblioteca',
@@ -47,7 +47,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 3308,
 	];
 
 	/**
